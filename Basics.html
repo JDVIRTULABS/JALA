@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Basic</title>
+  <style>
+    /* Links change color when you hover over them */
+    a:hover {
+      color: #eb0000;
+      text-decoration: underline;
+    }
+
+    /* Adds an arrow before section titles */
+    h2::before {
+      content: "→ ";
+      color: #2980b9;
+    }
+
+    /* Highlighted text style */
+    .highlight {
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    /* Box style for div */
+    .box {
+      background: #ecf0f1;
+      border: 1px solid #bdc3c7;
+      padding: 15px;
+      margin: 20px 0;
+    }
+
+    /* Basic page styles */
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      color: #2c3e50;
+      line-height: 1.5;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #2980b9;
+      font-weight: 600;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #bdc3c7;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Basics.html</h1>
+
+  <nav>
+    <a href="#intro">Intro</a>
+    <a href="#tags">Tags</a>
+    <a href="#layout">Layout</a>
+    <a href="#good-to-know">Good to Know</a>
+  </nav>
+
+  <hr />
+
+  <h2 id="intro">Intro</h2>
+  <p>
+    Hey! This is my first webpage where I’m practicing some important HTML tags and CSS tricks. 
+    I’m using <i>italic</i> and <b>bold</b> text here, and adding links like 
+    <a href="https://www.example.com" target="_blank" rel="noopener">Example.com</a>.
+  </p>
+
+  <hr />
+
+  <h2 id="tags">Some HTML Tags</h2>
+  <ul>
+    <li>Headings like &lt;h1&gt; to &lt;h6&gt;</li>
+    <li>Paragraphs &lt;p&gt;</li>
+    <li>Lists with &lt;ul&gt; and &lt;li&gt;</li>
+    <li>Links with &lt;a&gt;</li>
+    <li>Labels for forms &lt;label&gt;</li>
+    <li>Blockquotes &lt;blockquote&gt;</li>
+    <li>Horizontal lines &lt;hr&gt;</li>
+    <li>Images &lt;img&gt;</li>
+    <li>Divisions &lt;div&gt;</li>
+    <li>Span for inline text &lt;span&gt;</li>
+  </ul>
+
+  <label for="name">Your name: </label>
+  <input type="text" id="name" name="name" placeholder="Type here" />
+
+  <blockquote>
+    “Learning by doing is the best way.” – Someone smart
+  </blockquote>
+
+  <hr />
+
+  <h2 id="layout">Layout with Div and Span</h2>
+  <div class="box">
+    This is a div — it groups block content together.
+  </div>
+
+  <p>And here’s a <span class="highlight">span</span> inside a sentence to style just a few words.</p>
+
+  <img src="img.webp" alt="Sample image" width="150px" />
+
+  <hr />
+
+  <h2 id="good-to-know">Good to Know</h2>
+  <p><b>HTML vs HTML5 vs CSS vs JavaScript:</b></p>
+  <ul>
+    <li><b>HTML:</b> The code that structures a webpage.</li>
+    <li><b>HTML5:</b> The latest version of HTML with new cool features.</li>
+    <li><b>CSS:</b> How you make your page look nice and colorful.</li>
+    <li><b>JavaScript:</b> Adds interactivity to your webpage.</li>
+  </ul>
+
+  <p><b>Div vs Span:</b></p>
+  <ul>
+    <li><b>Div:</b> A block-level container, takes the full width.</li>
+    <li><b>Span:</b> Inline container, only wraps around the content you want.</li>
+  </ul>
+
+  <p><a href="#intro">Back to top</a></p>
+
+</body>
+</html>
